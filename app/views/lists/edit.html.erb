@@ -1,0 +1,11 @@
+<h1>Edit ToDo</h1>
+
+<%= form_for @list do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title, placeholder: 'title', required: true %>
+<%= f.label :author %>
+<%= f.text_field :author, placeholder:'author', required: true %>
+<%= f.label :completed %>
+<%= f.check_box :completed%>
+<%= f.submit %>
+<% end %>
